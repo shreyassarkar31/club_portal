@@ -2,7 +2,7 @@ simple starter app
 
 test123
 
-ayo, so we're going ahead with a social networking app that encompasses the following:
+  we're going ahead with a social networking app that encompasses the following:
 * media sharing
 * community discussion
 * reviewing

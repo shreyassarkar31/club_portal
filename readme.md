@@ -1,13 +1,8 @@
-simple starter app
+Basic Music player app 
+Features - 
 
-test123
-
-  we're going ahead with a social networking app that encompasses the following:
-* media sharing
-* community discussion
-* reviewing
-* relationship networking
-* messenger
-* news updates
-* transient content i.e. disappearing after stipulated time
-* chatbots
+Play/Pause button
+next in queue button
+loop button
+favourites
+playlist

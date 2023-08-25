@@ -1,0 +1,54 @@
+body{
+    background-color: rgb(221, 161, 49);
+    color: white;
+    
+}
+
+
+#container{
+    height: 50vh;
+    width: 20vw;
+    margin: 200px 700px 200px 500px;
+    background-color: rgb(243 133 8);
+    border-radius: 10%;
+    box-shadow: 0px 0px 6px 4px rgb(179, 96, 2);
+    padding: 50px;
+    
+    
+    
+}
+
+.widget-title{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: white;
+    text-align: center;
+}
+
+.widget input{
+    display:block;
+    background-color: gainsboro;
+    margin-bottom: 10px;
+    padding: 4px;
+    color: black;
+    font-size: 1rem;
+    width:90%; 
+    border:2px solid rgb(109, 113, 109);
+    border-radius: 18px;
+    margin-top:5px; 
+    
+}
+
+button{
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    text-transform: capitalize;
+    padding: 10px 5px;
+    margin-top: 10px;
+    border-radius: 20px;
+    width : 50%;
+    margin-bottom: 40px;
+    align-content: center;
+}

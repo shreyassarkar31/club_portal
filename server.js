@@ -10,8 +10,9 @@ mongoose.connect('mongodb+srv://31shreyassarkar13:qquZWE0wmpVZeWB2@cluster0.50wr
 
 const notesSchema = {
 
-    Firstname: String,
-    Lastname: String
+    Name: String,
+    password: String,
+    Email: String
 }
 
 const Note = mongoose.model("Note", notesSchema);
@@ -26,8 +27,9 @@ app.get("/", function(req, res) {
 app.post("/", function(req, res) {
 
     let newNote = new Note({
-        Firstname: req.body.Firstname,
-        Lastname: req.body.Lastname
+        Name: req.body.Name,
+        password: req.body.password,
+        Email: req.body.Email
     })
     newNote.save();
     res.redirect('/');

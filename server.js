@@ -32,8 +32,14 @@ app.post("/", function(req, res) {
         Email: req.body.Email
     })
     newNote.save();
-    res.redirect('/login');
+    //res.render('index')
+    //res.redirect("https://www.google.com");
 })
+
+
+
+
+
 
 app.listen(3000, function() {
     console.log("server is running on 3000")

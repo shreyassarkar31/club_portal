@@ -20,7 +20,7 @@ const Note = mongoose.model("Note", notesSchema);
 
 app.get("/", function(req, res) {
 
-    res.sendFile(__dirname + "/LoginForm.html")
+    res.sendFile(__dirname + "/SignupForm.html")
 })
 
 
@@ -32,7 +32,7 @@ app.post("/", function(req, res) {
         Email: req.body.Email
     })
     newNote.save();
-    res.redirect('/');
+    res.redirect('/login');
 })
 
 app.listen(3000, function() {

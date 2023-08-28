@@ -21,6 +21,7 @@ const Note = mongoose.model("Note", notesSchema);
 app.get("/", function(req, res) {
 
     res.sendFile(__dirname + "/SignupForm.html")
+    
 })
 
 
@@ -32,8 +33,8 @@ app.post("/", function(req, res) {
         Email: req.body.Email
     })
     newNote.save();
-    //res.render('index')
-    //res.redirect("https://www.google.com");
+    res.redirect('/')
+    
 })
 
 

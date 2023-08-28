@@ -33,8 +33,19 @@ app.post("/", function(req, res) {
         Email: req.body.Email
     })
     newNote.save();
-    res.redirect('/')
+    res.redirect('/login')
     
+})
+
+app.get('/login', function(req, res) {
+
+    res.sendFile(__dirname + '/login.html')
+
+})
+
+app.post('/login', function(req, res) {
+
+    res.redirect('/login')
 })
 
 

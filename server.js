@@ -10,7 +10,7 @@ mongoose.connect('mongodb+srv://31shreyassarkar13:qquZWE0wmpVZeWB2@cluster0.50wr
 
 const notesSchema = {
 
-    Name: String,
+    Username: String,
     password: String,
     Email: String
 }
@@ -28,7 +28,7 @@ app.get("/", function(req, res) {
 app.post("/", function(req, res) {
 
     let newNote = new Note({
-        Name: req.body.Name,
+        Username: req.body.Username,
         password: req.body.password,
         Email: req.body.Email
     })

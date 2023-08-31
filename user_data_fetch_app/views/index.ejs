@@ -12,7 +12,7 @@
         <thead>
           <tr>
             <th scope="col">ID</th>
-            <th scope="col">Name</th>
+            <th scope="col">Username</th>
             <th scope="col">password</th>
             <th scope="col">Email</th>
           </tr>
@@ -21,7 +21,7 @@
         <% usersList.forEach((entry) => {%>
             <tr>
                 <th scope="row"><%= entry._id %></th>
-                <td><%= entry.Name %></td>
+                <td><%= entry.Username %></td>
                 <td><%= entry.password %></td>
                 <td><%= entry.Email %></td>
             </tr>

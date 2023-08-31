@@ -9,7 +9,7 @@ app.set('view engine', 'ejs');
 mongoose.connect('mongodb+srv://31shreyassarkar13:qquZWE0wmpVZeWB2@cluster0.50wryra.mongodb.net/MusicPlayerUsers');
 
 const userSchema = {
-    Name: String,
+    Username: String,
     password: String,
     Email: String
 }

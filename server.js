@@ -45,8 +45,14 @@ app.get('/login', function(req, res) {
 
 
 
+app.get('/login/main', function(req, res) {
 
+    res.sendFile(__dirname + '/main.html')
+})
 
+app.post('/login/main',function(req, res) {
+    res.redirect('/login/main')
+})
 
 
 

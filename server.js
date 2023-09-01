@@ -15,12 +15,19 @@ const notesSchema = {
     Email: String
 }
 
+const loginSchema = {
+    Username:String,
+    password:String
+}
+
 const Note = mongoose.model("Note", notesSchema);
+const logindata = mongoose.model("logindata", loginSchema);
 
 
 app.get("/", function(req, res) {
 
     res.sendFile(__dirname + "/SignupForm.html")
+
     
 })
 
@@ -44,13 +51,20 @@ app.get('/login', function(req, res) {
 })
 
 
-
 app.get('/login/main', function(req, res) {
 
     res.sendFile(__dirname + '/main.html')
 })
 
 app.post('/login/main',function(req, res) {
+
+    let newLogin = new logindata({
+        Username:req.body.Username,
+        password:req.body.password
+    })
+    newLogin.save();
+
+    
     
     res.redirect('/login/main')
 })

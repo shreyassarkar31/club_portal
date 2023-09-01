@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.static(__dirname+'/images'));
 
 mongoose.connect('mongodb+srv://31shreyassarkar13:qquZWE0wmpVZeWB2@cluster0.50wryra.mongodb.net/MusicPlayerUsers')
 
@@ -27,6 +28,7 @@ const logindata = mongoose.model("logindata", loginSchema);
 app.get("/", function(req, res) {
 
     res.sendFile(__dirname + "/SignupForm.html")
+    
 
     
 })

@@ -1,6 +1,5 @@
-body{
-    background-image: linear-gradient(to right,#cdffd8,#94b9ff);
-    color: white;
+.background{
+    background-image: url("\IMAGES\background.jpg");
     
 }
 
@@ -54,7 +53,7 @@ body{
     background-color: #737373;
     margin-bottom: 5%;
     padding: 3%;
-    color: hwb(0 95% 5%);
+    color: hwb(0 100% 0%);
     font-size: 1rem;
     width:90%; 
     border:2px solid rgb(109, 113, 109);

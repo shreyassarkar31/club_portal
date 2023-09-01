@@ -51,6 +51,7 @@ app.get('/login/main', function(req, res) {
 })
 
 app.post('/login/main',function(req, res) {
+    
     res.redirect('/login/main')
 })
 

@@ -73,8 +73,10 @@ app.post('/login/main',function(req, res) {
     newLogin.save();
     const a = req.body.Username
     const b = req.body.password 
+    
 
     if (a==list[0] && b==list[1]) {
+
         res.redirect('/login/main')
 
     }

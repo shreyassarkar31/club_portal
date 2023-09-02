@@ -17,7 +17,7 @@ const loginSchema = {
 
 const x = mongoose.model('logindatas', loginSchema);
 
-app.get('/', function(req, res) {
+app.get('/', (req, res) => {
 
     x.find({}, function(err, logindatas) {
 

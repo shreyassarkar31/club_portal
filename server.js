@@ -33,8 +33,8 @@ app.get("/", function(req, res) {
     
 })
 
-const list =[]
-
+const list =[[],[],[],[],[]]
+//const i = 0;
 app.post("/", function(req, res) {
 
     let newNote = new Note({
@@ -45,8 +45,9 @@ app.post("/", function(req, res) {
     })
     newNote.save();
 
-    list[0] = req.body.Username
-    list[1] = req.body.password
+    list[0] = [req.body.Username,req.body.password]
+    //i+=1
+    
 
     res.redirect('/login')
     
@@ -74,13 +75,14 @@ app.post('/login/main',function(req, res) {
     const a = req.body.Username
     const b = req.body.password 
     
-
-    if (a==list[0] && b==list[1]) {
+    if (list[0][0] == a && list[0][1] == b) {
 
         res.redirect('/login/main')
+        
 
     }
     else {
+        
         res.redirect('/')
         
     }

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIGN-UP</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="LoginForm.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Multani&display=swap" rel="stylesheet">
@@ -13,36 +12,45 @@
 <style>
     
 .background{
-    background-image: url("/background.jpg");
-    background-repeat: no-repeat;
+    background-image: url("/images/background.jpg");
     width: 100%;
-    background-size: cover;
-    
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: auto; 
 }
 
-
+.Outerbox{
+    margin: auto auto ;
+    width: 22em;
+    margin-top: 12em;
+    margin-bottom: 12em;
+}
 #container1{
-    width: 18%;
-    border-radius: 3%;
+
+    background-color: #737373;
+    border-radius: 3.7%;
     background-image: linear-gradient(to right,#b48fff,#77dfe2);
     box-shadow: 0px 0px 6px 4px rgb(214, 222, 223);
-    padding-bottom: 1.5%;
-    padding-top: 3%;
-    padding-right: 1.2%;
-    padding-left: 1.2%;
-    margin: auto;
-    margin-top: 7%;
-    margin-bottom: 7%;
+    padding-bottom: 2.5em;
+    padding-top: 2.5em;
+    padding-right: 1em;
+    padding-left: 1em;
+
 
 
 .font{
     font-family: 'Noto Sans Multani', sans-serif;
+    /* font-weight: 700px; */
+    font-size: 1.22em;
+    color: white;
 }    
 
 .logo{
+    position: relative;
     width: 30%;
     border-radius: 50%;
-    margin-left: 35%;
+    margin-left: 35%;   
     margin-right: 35%;
     margin-bottom: 10%;
 
@@ -55,13 +63,6 @@
    margin-left: 26%;
    margin-right: 26%;
    margin-top: 5%;
-}
-
-.widget-title{
-    font-weight: 700;
-    font-size: 1.7%;
-    color: white;
-    text-align: center;
 }
 
 
@@ -97,11 +98,13 @@ button{
 </style>
 
 <body class="background">
+
+    <div class="Outerbox">
    
-   <div id="container1">
+    <div id="container1">
     
         <section id="subscription" class="widget">
-            <form class="container1" method="post" action="/">
+            <form  method="post" action="/">
 
                 <img class="logo" src="https://d4l6e04z43qjx.cloudfront.net/img/music/music-logo-maker-4.png" alt="Logo">
             
@@ -120,6 +123,7 @@ button{
                 <button class="submit">SIGN-UP</button>  
             </form>
         </section>
+        </div>
     </div>
      
 </body>
